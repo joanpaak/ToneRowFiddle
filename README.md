@@ -12,13 +12,16 @@ You can find prime forms of pitch class sets.
 
 # Quick setup and how to get started
 
-Tone Matrix:
+Installation and launching the program:
 
 1) Download all of the files
 2) Place them in the same folder
 3) Open toneRowFiddle.html with your browser (that support JavaScript)
-4) Load the Default row
-5) Write "bb b f" into the Fragment input (without the quotation marks) and press Enter.
+
+Tone Matrix:
+
+1) Load the Default row
+2) Write "bb b f" into the Fragment input (without the quotation marks) and press Enter.
 
 Prime Form finder:
 
