@@ -1,0 +1,128 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+#topPanel{
+    background-color: rgb(245, 247, 217);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-weight: 100;
+}
+
+h1{
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-weight: 100;    
+    font-size: 2rem;
+}
+
+p, button, td, input, footer, select, th, .highlight{
+    font-size: 1.25rem;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.centeredTable{
+    margin: 1rem auto;
+}
+
+#primeFormTable{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#primeFormTable th{
+    border-bottom: 1px solid black;
+    font-weight: 100;
+    padding: 0 1rem;
+}
+
+.highlight{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-weight: 100;    
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;   
+    padding: 0.15rem 1rem; 
+}
+
+#windowContainer{
+    margin: 0 3rem;
+    padding-top: 1rem;
+}
+
+#primeFormFinderDisplay{
+    display: none;
+}
+
+#helpDisplay{
+    display: none;
+}
+
+#toneMatrix{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+#toneMatrix td{
+    border:1px solid black;
+    text-align: center;
+    /*font-size: 1.25rem;*/
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.toneCell{
+    font-size: 1.5rem;
+}
+
+/* 
+.toneCell:hover{
+    box-shadow: black 2px 2px;
+    cursor: pointer;
+}*/
+
+.toneCell::first-letter{
+    font-variant: small-caps;
+    font-size: 2rem;
+}
+
+select{
+    width: 100%;
+}
+
+/* */
+
+.noteRespellingWindow{
+    width: fit-content;;
+    background-color: white;
+    border: 1px solid black;
+
+    padding: 0.5rem 2rem;
+}
+
+.noteRespellingWindow input{
+    width: 1.5rem;
+    display: inline-block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+

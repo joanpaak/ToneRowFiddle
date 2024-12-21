@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tone-Row Fiddle 0.7</title>
+        <link rel="stylesheet" href="fiddleStyle.css">
+    </head>
+    <body>
+        <div id="topPanel">
+            <div id="titlePane">
+                <h1>Tone-Row Fiddle</h1>
+            </div>
+            <div id="btnPane">
+                <button id="matrixBtn">Tone Matrix</button>
+                <button id="primeFormFinderBtn">Prime Form Finder</button>
+                <button id="helpBtn">Help</button>
+            </div>
+        </div>
+        <div id="windowContainer">
+            <div id="matrixDisplay">
+                <table class="centeredTable">
+                    <tr>
+                        <td>Load row:</td>
+                        <td>
+                            <select id="rowSelector"></select>
+                        </td>
+                        <td>
+                            <button id="loadRowBtn">Load</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Row:
+                        </td>
+                        <td colspan="2">
+                            <input type="text" id="rowInput">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fragment:
+                        </td>
+                        <td colspan="2">
+                            <input type="text" id="fragmentInput">
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="toneMatrix" class="centeredTable"></table>
+
+            </div>
+            <div id="primeFormFinderDisplay">
+                <h2></h2>
+
+                <table class="centeredTable">
+                    <tr>
+                        <td><input type="text" id="primeFormInput"></td>
+                        <td><button id="findPrimeFormBtn">Find prime form</button></td>
+                    </tr>
+                </table>
+
+                <table class="centeredTable" id="primeFormTable">
+                    <tr>
+                        <th>Original set</th>
+                        <th>Prime form</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="helpDisplay">
+                <h2>Tone Matrix</h2>
+
+                <p>In the Tone Matrix view, write a tone row using note names into the field labeled <span class="highlight">Row</span>, separating note names with spaces (load one of the pre-saved rows to see the correct format). You can use either upper or lower case letters. English note names and crosses (#) are allowed. Press <span class="highlight">Enter</span> and a tone matrix is constructed from the row.</p>
+
+                <p>Input notes&mdash;again using note names&mdash; into the field labeled <span class="highlight">Fragment</span>, press <span class="highlight">Enter</span> and rows which contain that sequence of tones will be highlighted.</p>
+
+                <p>Note that the search is based on pitch classes, so e.g. Bbb and A are equal. </p>
+
+                <p>To clear the highlight, clear the field and press <span class="highlight">Enter</span>.</p>
+
+                <p>Tone "rows" don't have to be 12 tones long nor do they have to contain all pitch classes and they can contain repeated notes, see the pre-supplied row "Theme from Musical Offering".</p>
+                
+                <h2>Change spelling of notes</h2>
+
+                <p>By clicking on a cell you can freely edit its contents. NOTE that this does <span class="highlight">NOT</span> affect the underlying representation of the tone row on which the highlighting is based on; changing spelling is purely cosmetic and mostly intended for fixing enharmonic problems (e.g. changing G# to Ab).</p>
+
+                <h2>Saving/loading a row</h2>
+
+                <p>To save a row, edit the file <span class="highlight">savedRows.js</span>. There are a couple of examples in the file from which you can see how rows should be saved into it.</p>
+
+                <p>Rows in the above mentioned file will be added to the selector and you can then load them by selecting a row and clicking the <span class="highlight">Load</span> button.</p>
+
+                <h2>Prime form finder</h2>
+
+                <p>In this view you can find the prime forms of pitch class sets. You can input either pitch classes or note names. When you press <span class="highlight">Enter</span> the prime form of the set you input is found and it is written into the table below the input field.</p>
+
+                <h2>About</h2>
+
+                <p>Tone-Row Fiddle v 0.7. Created by Joni Pääkkö in 2024.</p>
+
+            </div>
+        </div>
+
+        <footer>&copy; Joni Pääkkö</footer>
+
+    </body>
+
+    <script src="savedRows.js"></script>
+    <script src="fiddleClasses.js"></script>
+</html>
