@@ -9,3 +9,20 @@ It creates 12-tone matrices from 12-tone rows. (Actually the algorithm is generi
 You can input "tone fragments" and the tool highlights which rows are compatible with that fragment.
 
 You can find prime forms of pitch class sets.
+
+# Quick setup and how to get started
+
+Tone Matrix:
+
+1) Download all of the files
+2) Place them in the same folder
+3) Open toneRowFiddle.html with your browser (that support JavaScript)
+4) Load the Default row
+5) Write "bb b f" into the Fragment input (without the quotation marks) and press Enter.
+
+Prime Form finder:
+
+1) Write "0 4 5" to the the input field (without quotation marks) and press Enter
+2) Write "f b e" to the the input field (without quotation marks) and press Enter
+
+I'm sure that based on these examples you'll be able to figure out the basic usage of the thing!
