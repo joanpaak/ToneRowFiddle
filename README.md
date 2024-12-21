@@ -14,7 +14,7 @@ You can find prime forms of pitch class sets.
 
 Installation and launching the program:
 
-1) Download all of the files (exvluding this, ie. README.md)
+1) Download all of the files (excluding this, ie. README.md)
 2) Place them in the same folder
 3) Open toneRowFiddle.html with your browser (that supports JavaScript)
 
