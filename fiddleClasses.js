@@ -295,11 +295,39 @@ class MatrixHandler {
         this.removeHighlights();
 
         for (let i = 0; i < this.lut.length; i++) {
-            if (this.lut[i].rowString.match(pcString) != null) {
+
+            if (this.fragmentMatchesRow(pcString, this.lut[i].rowString)) {
                 this.highlightRow(this.lut[i]);
                 this.highlightedRows.push(i);
             }
+            //if (this.lut[i].rowString.match(pcString) != null) {
+            //    this.highlightRow(this.lut[i]);
+            //    this.highlightedRows.push(i);
+            //}
         }
+    }
+
+    fragmentMatchesRow(fragment, row){
+        let matchFound = true;
+
+        let splitRow = row.split(" ")
+        let splitFragment = fragment.split(" ");
+
+        for(let i = 0; i < splitRow.length; i++){
+            if(splitRow[i].match(splitFragment[0])){
+                for(let j = 0; j < splitFragment.length; j++){
+                    if(j + i >= (splitRow.length - 1)) return false;                    
+                    if(!splitFragment[j].match(splitRow[j + i])){
+                        console.log("Not a match");
+                        return false;
+                    }   
+                }
+
+                return true;
+            }
+        }
+
+        return matchFound;
     }
 
     /* PRIVATE METHODS */
